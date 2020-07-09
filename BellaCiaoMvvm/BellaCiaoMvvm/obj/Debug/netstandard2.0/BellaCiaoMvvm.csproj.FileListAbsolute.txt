@@ -1,0 +1,17 @@
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\bin\Debug\netstandard2.0\BellaCiaoMvvm.deps.json
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\bin\Debug\netstandard2.0\BellaCiaoMvvm.dll
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\bin\Debug\netstandard2.0\ref\BellaCiaoMvvm.dll
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\bin\Debug\netstandard2.0\BellaCiaoMvvm.pdb
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\view\LoginPage.xaml.g.cs
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\view\MainPage.xaml.g.cs
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\view\NewSubscriptionPage.xaml.g.cs
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\view\SubscriptionDetailsPage.xaml.g.cs
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\BellaCiaoMvvm.AssemblyInfoInputs.cache
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\BellaCiaoMvvm.AssemblyInfo.cs
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\BellaCiaoMvvm.csproj.CoreCompileInputs.cache
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\BellaCiaoMvvm.dll
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\ref\BellaCiaoMvvm.dll
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\BellaCiaoMvvm.pdb
+C:\Users\erpre\source\repos\BellaCiaoMvvm\BellaCiaoMvvm\BellaCiaoMvvm\obj\Debug\netstandard2.0\BellaCiaoMvvm.csprojAssemblyReference.cache

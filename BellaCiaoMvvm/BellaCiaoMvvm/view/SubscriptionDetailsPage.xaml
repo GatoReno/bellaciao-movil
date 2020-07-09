@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:vm="clr-namespace:BellaCiaoMvvm.viewmodel"
+             mc:Ignorable="d"
+             Title="Details"
+             x:Class="BellaCiaoMvvm.view.SubscriptionDetailsPage">
+    
+            <ContentPage.Resources>
+                <ResourceDictionary>
+                    <vm:SubscriptionDetailsViewModel x:Key="vm" />
+                </ResourceDictionary>
+            </ContentPage.Resources>
+    
+            <ContentPage.ToolbarItems>
+                <ToolbarItem Text="Update"
+                                        BindingContext="{StaticResource vm}"
+                                        Command="{Binding UpdateCommand}"
+                                     CommandParameter="{Binding Name}"
+                                     />
+            </ContentPage.ToolbarItems>
+    
+    
+    <ContentPage.Content>
+        <StackLayout Margin="16"
+                     BindingContext="{StaticResource vm}"
+                     >
+            <Label Text=""                 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry
+                Text="{Binding Name, Mode=TwoWay}"
+                Placeholder="Subscription Name"                
+                />          
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Is this subscription still active?"
+                    
+                    VerticalOptions="Center"/>
+                <CheckBox
+                   IsChecked="{Binding IsActive, Mode=TwoWay}"/>
+            </StackLayout>
+
+            <Button 
+                Text="Delete"
+                Command="{Binding DeleteCommand}"
+                WidthRequest="280"                
+                TextColor="White"
+                BackgroundColor="IndianRed"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:BellaCiaoMvvm.viewmodel"
+             x:Class="BellaCiaoMvvm.view.LoginPage">
+    
+    <ContentPage.Resources>
+            <ResourceDictionary>
+                <vm:LoginViewModel x:Key="vm"/>
+            </ResourceDictionary>
+        </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <Grid
+            Margin="0.18"
+            BindingContext="{StaticResource vm}"
+            >
+            <StackLayout x:Name="LoginStack"
+                         Padding="5"
+                         VerticalOptions="Center">
+                <Image
+                    Source="ic"
+                    />
+                
+                <Entry
+                    Text="{Binding Email, Mode=TwoWay}"
+                    Placeholder="email"
+                    Keyboard="Email"
+                    x:Name="emaily"/>
+                <Entry
+                    Placeholder="password"
+                    IsPassword="true"
+                    Text="{Binding Pass, Mode=TwoWay}"
+                    x:Name="passy"/>
+                <Button
+                    Text="Login"
+                    Command="{Binding LoginCommand}"
+                    CommandParameter="{Binding CanLogin}"
+                    TextColor="White"
+                    BackgroundColor="DarkSlateGray"/>
+
+                <StackLayout
+                    Orientation="Horizontal">
+                <Label
+                    Text="don't have account?"/>
+                    <Label
+                    Text="regist now!"
+                   TextColor="HotPink" >
+                        <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="RegistStack"
+                         Padding="5"
+                         IsVisible="false"
+                         VerticalOptions="Center"
+                         >
+                <Image
+                    Source="ic"
+                    />
+                <Entry
+                    Placeholder="name"
+                       Text="{Binding Name, Mode=TwoWay}"
+                    x:Name="namex"/>
+             
+                <Entry
+                    Placeholder="email"
+                       Text="{Binding Email, Mode=TwoWay}"
+                    x:Name="emailx"/>
+                <Entry
+                    Placeholder="password"
+                    IsPassword="true"
+                       Text="{Binding Pass, Mode=TwoWay}"
+                    x:Name="passx"/>
+
+                <Entry
+                    Placeholder="confirm password"
+                    IsPassword="true"
+                       Text="{Binding ConfirmPass, Mode=TwoWay}"
+                    x:Name="confirmpassx"/>
+                <Button
+                    Text="Regist"
+                     Command="{Binding RegistCommand}"
+                    CommandParameter="{Binding CanLogin}"
+                    TextColor="White"
+                    BackgroundColor="DarkSlateGray"/>
+
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Label
+                    Text="do you have an account?"/>
+                    <Label
+                    Text="log now!"
+                   TextColor="HotPink" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Log"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

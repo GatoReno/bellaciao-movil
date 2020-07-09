@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:BellaCiaoMvvm.viewmodel"
+             Title="Bella Ciao"
+             x:Class="BellaCiaoMvvm.view.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:SubscriptionListViewModel x:Key="vm"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"                
+                HorizontalOptions="CenterAndExpand" />
+            <ListView 
+                        BindingContext="{StaticResource vm}"
+                        ItemsSource="{Binding  Subscriptions}"
+                        SelectedItem="{Binding SelectedSubscription, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell  
+                            Text="{Binding Name}"
+                            Detail="{Binding SubscribedDate}" />
+                   
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
